@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+
+# Replace with your actual published URL once you know it, e.g.:
+# Sitemap: https://<your-username>.github.io/<your-repo>/sitemap.xml
+Sitemap: sitemap.xml

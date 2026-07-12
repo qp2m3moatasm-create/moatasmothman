@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Motasm Othman | معتصم العثمان — مصور ومصمم جرافيك ومونتير فيديو</title>
+  <meta name="description" content="الموقع الشخصي لمعتصم العثمان (Motasm Othman) — مصور فوتوغرافي، مصمم جرافيك، ومونتير فيديو من إدلب، سوريا. استكشف أعمالي وتواصل معي.">
+  <meta name="keywords" content="Motasm Othman, معتصم العثمان, photographer, graphic designer, video editor, Idlib, Syria, portfolio">
+  <meta name="author" content="Motasm Othman">
+  <meta name="robots" content="index, follow">
+  <link id="canonical-link" rel="canonical" href="">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Motasm Othman">
+  <meta property="og:title" content="Motasm Othman | معتصم العثمان">
+  <meta property="og:description" content="مصور فوتوغرافي، مصمم جرافيك، ومونتير فيديو من إدلب، سوريا. استكشف أعمالي وتواصل معي.">
+  <meta property="og:image" content="./assets/images/motasm-hero.jpg">
+  <meta id="og-url" property="og:url" content="">
+  <meta property="og:locale" content="ar_AR">
+  <meta property="og:locale:alternate" content="en_US">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Motasm Othman | معتصم العثمان">
+  <meta name="twitter:description" content="مصور فوتوغرافي، مصمم جرافيك، ومونتير فيديو من إدلب، سوريا.">
+  <meta name="twitter:image" content="./assets/images/motasm-hero.jpg">
+
+  <meta name="theme-color" content="#0B0B0F" media="(prefers-color-scheme: dark)">
+  <meta name="theme-color" content="#F8FAFC" media="(prefers-color-scheme: light)">
+
+  <link rel="icon" type="image/svg+xml" href="./favicon.svg">
+  <link rel="alternate icon" href="./favicon.ico">
+  <link rel="apple-touch-icon" href="./apple-touch-icon.png">
+  <link rel="manifest" href="./site.webmanifest">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="preload" as="image" href="./assets/images/motasm-hero-circle.webp" fetchpriority="high">
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Motasm Othman",
+    "alternateName": "معتصم العثمان",
+    "jobTitle": ["Photographer", "Graphic Designer", "Video Editor"],
+    "url": ".",
+    "image": "./assets/images/motasm-hero.jpg",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Idlib",
+      "addressCountry": "SY"
+    },
+    "sameAs": [
+      "https://www.facebook.com/share/1DedkMVwop/",
+      "https://www.instagram.com/qp2m9",
+      "https://www.tiktok.com/@qp2m9",
+      "https://x.com/MOATASMOTHMAN20",
+      "https://www.threads.com/@qp2m9",
+      "https://www.snapchat.com/add/qp2m3",
+      "https://t.me/qp2m9"
+    ]
+  }
+  </script>
+</head>
+<body class="dark">
+  <a href="#main-content" class="skip-link" data-i18n="skip_link">تخطَّ إلى المحتوى</a>
+
+  <div id="mouse-glow" aria-hidden="true"></div>
+  <canvas id="particles-bg" aria-hidden="true"></canvas>
+
+  <div id="loading-screen" class="flex-center" role="status" aria-live="polite" aria-label="Loading">
+    <div class="loader-content">
+      <div class="loader-logo gradient-text">MO</div>
+      <div class="loader-bar">
+        <div class="loader-progress"></div>
+      </div>
+    </div>
+  </div>
+
+  <nav id="navbar" class="glass-nav" aria-label="Main navigation">
+    <div class="container nav-container">
+      <a href="#hero" class="nav-logo gradient-text">MOTASM</a>
+      <div class="nav-links">
+        <a href="#about" class="nav-link" data-i18n="nav_about" data-section="about">من أنا</a>
+        <a href="#skills" class="nav-link" data-i18n="nav_skills" data-section="skills">المهارات</a>
+        <a href="#gallery" class="nav-link" data-i18n="nav_gallery" data-section="gallery">معرض الأعمال</a>
+        <a href="#contact" class="nav-link" data-i18n="nav_contact" data-section="contact">تواصل معي</a>
+      </div>
+      <div class="nav-controls">
+        <button id="theme-toggle" class="icon-btn" type="button" aria-label="تبديل الوضع الليلي/النهاري" aria-pressed="false">
+          <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>
+          <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
+        </button>
+        <button id="lang-toggle" class="lang-btn" type="button" aria-label="Switch language / تبديل اللغة">EN</button>
+        <button id="mobile-menu-btn" class="icon-btn mobile-only" type="button" aria-label="فتح القائمة" aria-expanded="false" aria-controls="mobile-menu">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <div id="mobile-menu" class="glass-overlay" aria-hidden="true">
+    <nav class="mobile-nav-links" aria-label="Mobile navigation">
+      <a href="#about" class="mobile-nav-link" data-i18n="nav_about">من أنا</a>
+      <a href="#skills" class="mobile-nav-link" data-i18n="nav_skills">المهارات</a>
+      <a href="#gallery" class="mobile-nav-link" data-i18n="nav_gallery">معرض الأعمال</a>
+      <a href="#contact" class="mobile-nav-link" data-i18n="nav_contact">تواصل معي</a>
+    </nav>
+  </div>
+
+  <main id="main-content" tabindex="-1">
+    <section id="hero" class="hero-section flex-center">
+      <div class="container hero-container">
+        <div class="hero-content reveal-up">
+          <div class="live-status">
+            <span class="pulse-dot" aria-hidden="true"></span>
+            <span id="live-time" aria-live="off"></span>
+            <span id="live-greeting" data-i18n="greeting_morning">صباح الخير</span>
+          </div>
+          <h1 class="hero-title">
+            <span class="glitch-wrapper">MOTASM</span>
+            <span class="gradient-text glow-text">OTHMAN</span>
+          </h1>
+          <p class="hero-subtitle">
+            <span id="typewriter" class="typing-text" aria-live="polite"></span><span class="cursor" aria-hidden="true">|</span>
+          </p>
+          <div class="hero-actions">
+            <a href="#contact" class="btn btn-primary">
+              <span data-i18n="btn_contact">تواصل معي</span>
+            </a>
+            <a href="#gallery" class="btn btn-secondary">
+              <span data-i18n="btn_work">استكشف أعمالي</span>
+            </a>
+          </div>
+        </div>
+        <div class="hero-visual reveal-scale">
+          <div class="profile-frame">
+            <div class="profile-glow" aria-hidden="true"></div>
+            <div class="profile-ring" aria-hidden="true"></div>
+            <div class="profile-photo">
+              <picture>
+                <source srcset="./assets/images/motasm-hero-circle.webp" type="image/webp">
+                <img src="./assets/images/motasm-hero-circle.jpg" alt="معتصم العثمان - Motasm Othman" class="profile-img" width="400" height="400" fetchpriority="high" decoding="async">
+              </picture>
+              <div class="profile-vignette" aria-hidden="true"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="#about" class="scroll-indicator" aria-label="انتقل للأسفل">
+        <div class="mouse" aria-hidden="true">
+          <div class="wheel"></div>
+        </div>
+      </a>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container">
+        <div class="section-header reveal-up">
+          <h2 class="section-title gradient-text" data-i18n="about_title">من أنا</h2>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-text glass-card reveal-left">
+            <p data-i18n="about_p1">مرحبًا، أنا <span class="highlight">معتصم العثمان</span>، من <span class="highlight">سوريا</span> - محافظة <span class="highlight">إدلب</span>.</p>
+            <p data-i18n="about_p2">أبلغ من العمر 18 عامًا، وأدرس في المرحلة الثانوية العامة.</p>
+            <p data-i18n="about_p3">أعمل في مجال <span class="highlight">التصوير والتصميم والمونتاج</span>، وأسعى دائمًا إلى تطوير مهاراتي وصناعة أعمال إبداعية تجمع بين الجودة والابتكار.</p>
+            <p data-i18n="about_p4">أهتم بالتقنيات الحديثة، وأطمح إلى بناء <span class="highlight">هوية رقمية احترافية</span> تعكس شغفي وإبداعي.</p>
+            <p data-i18n="about_p5">مرحبًا بك في موقعي الشخصي، حيث يمكنك استكشاف أعمالي والتواصل معي عبر منصات التواصل الاجتماعي.</p>
+          </div>
+
+          <div class="about-info-cards reveal-right">
+            <div class="info-card glass-card">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--accent-primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+              <div>
+                <h3 data-i18n="info_age_label">العمر</h3>
+                <p data-i18n="info_age_val">18 عاماً</p>
+              </div>
+            </div>
+            <div class="info-card glass-card">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--accent-secondary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+              <div>
+                <h3 data-i18n="info_edu_label">الدراسة</h3>
+                <p data-i18n="info_edu_val">المرحلة الثانوية</p>
+              </div>
+            </div>
+            <div class="info-card glass-card">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--glow)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><polyline points="14 2 14 8 20 8"/><path d="m10 13 4 4-4 4"/></svg>
+              <div>
+                <h3 data-i18n="info_prof_label">المهنة</h3>
+                <p data-i18n="info_prof_val">تصوير، تصميم، مونتاج</p>
+              </div>
+            </div>
+            <div class="info-card glass-card">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--text-primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+              <div>
+                <h3 data-i18n="info_loc_label">الموقع</h3>
+                <p data-i18n="info_loc_val">إدلب، سوريا</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="social" class="section bg-alt">
+      <div class="container">
+        <div class="section-header reveal-up">
+          <h2 class="section-title gradient-text" data-i18n="social_title">المنصات</h2>
+          <div class="section-line"></div>
+        </div>
+        <div class="social-grid">
+          <a href="https://wa.me/qr/P7PNZ2LZGDCWM1" target="_blank" rel="noopener noreferrer" class="social-card glass-card reveal-up" style="--brand-color: #25D366;" aria-label="WhatsApp — يفتح في تبويب جديد">
+            <div class="social-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            </div>
+            <span>WhatsApp</span>
+          </a>
+          <a href="https://www.facebook.com/share/1DedkMVwop/" target="_blank" rel="noopener noreferrer" class="social-card glass-card reveal-up" style="--brand-color: #1877F2;" aria-label="Facebook — يفتح في تبويب جديد">
+            <div class="social-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            </div>
+            <span>Facebook</span>
+          </a>
+          <a href="https://www.instagram.com/qp2m9?igsh=MWRzdXhvZmp3NW00dg==" target="_blank" rel="noopener noreferrer" class="social-card glass-card reveal-up" style="--brand-color: #E4405F;" aria-label="Instagram — يفتح في تبويب جديد">
+            <div class="social-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+            </div>
+            <span>Instagram</span>
+          </a>
+          <a href="https://www.tiktok.com/@qp2m9?_r=1&_t=ZN-97x4H1fca4E" target="_blank" rel="noopener noreferrer" class="social-card glass-card reveal-up" style="--brand-color: #000000;" aria-label="TikTok — يفتح في تبويب جديد">
+            <div class="social-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"/></svg>
+            </div>
+            <span>TikTok</span>
+          </a>
+          <a href="https://x.com/MOATASMOTHMAN20" target="_blank" rel="noopener noreferrer" class="social-card glass-card reveal-up" style="--brand-color: #000000;" aria-label="X (Twitter) — يفتح في تبويب جديد">
+            <div class="social-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"/></svg>
+            </div>
+            <span>X (Twitter)</span>
+          </a>
+          <a href="https://www.threads.com/@qp2m9" target="_blank" rel="noopener noreferrer" class="social-card glass-card reveal-up" style="--brand-color: #000000;" aria-label="Threads — يفتح في تبويب جديد">
+            <div class="social-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22a10 10 0 1 0-10-10c0 4.5 3 8 7 8 4 0 6-3 6-7s-2.5-6-5.5-6-6 3-6 7 2 5 5 5c3 0 5-2 5-5s-2-4-4-4-4 2-4 5 1.5 3 3.5 3"/></svg>
+            </div>
+            <span>Threads</span>
+          </a>
+          <a href="https://www.snapchat.com/add/qp2m3?share_id=_b9gPCwU9XQ&locale=ar-EG" target="_blank" rel="noopener noreferrer" class="social-card glass-card reveal-up" style="--brand-color: #FFFC00;" aria-label="Snapchat — يفتح في تبويب جديد">
+            <div class="social-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2c2 0 4 1 5 3 .5.9.5 2 0 3-.5 1-1 1-1 2 0 1 2 2 3 2 1 0 1 1 0 2s-3 1-3 1c-1 0-2 1-2 2s1 2 3 2c1 0 1 1 0 2s-5-2-5-2-4 2-5 2-1-1 0-2 2-1 3-2-1-1-2-2-3 0-3-1 0-1 0-2-1-2-1-2 2 0 3-1 3-2 0-1-.5-1-1-2-.5-2 0-3 3-3 5-3z"/></svg>
+            </div>
+            <span>Snapchat</span>
+          </a>
+          <a href="https://t.me/qp2m9" target="_blank" rel="noopener noreferrer" class="social-card glass-card reveal-up" style="--brand-color: #229ED9;" aria-label="Telegram — يفتح في تبويب جديد">
+            <div class="social-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m22 2-7 20-4-9-9-4Z"/><path d="M22 2 11 13v8l4-5"/></svg>
+            </div>
+            <span>Telegram</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section">
+      <div class="container">
+        <div class="section-header reveal-up">
+          <h2 class="section-title gradient-text" data-i18n="skills_title">المهارات</h2>
+          <div class="section-line"></div>
+        </div>
+        <div class="skills-list">
+          <div class="skill-item reveal-up">
+            <div class="skill-info">
+              <span class="skill-name" data-i18n="skill_photo">التصوير الفوتوغرافي</span>
+              <span class="skill-pct">90%</span>
+            </div>
+            <div class="skill-bar-bg" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"><div class="skill-bar-fill" data-width="90%"></div></div>
+          </div>
+          <div class="skill-item reveal-up" style="transition-delay: 100ms;">
+            <div class="skill-info">
+              <span class="skill-name" data-i18n="skill_design">التصميم الجرافيكي</span>
+              <span class="skill-pct">85%</span>
+            </div>
+            <div class="skill-bar-bg" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"><div class="skill-bar-fill" data-width="85%"></div></div>
+          </div>
+          <div class="skill-item reveal-up" style="transition-delay: 200ms;">
+            <div class="skill-info">
+              <span class="skill-name" data-i18n="skill_video">المونتاج وتعديل الفيديو</span>
+              <span class="skill-pct">80%</span>
+            </div>
+            <div class="skill-bar-bg" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"><div class="skill-bar-fill" data-width="80%"></div></div>
+          </div>
+          <div class="skill-item reveal-up" style="transition-delay: 300ms;">
+            <div class="skill-info">
+              <span class="skill-name" data-i18n="skill_content">صناعة المحتوى</span>
+              <span class="skill-pct">75%</span>
+            </div>
+            <div class="skill-bar-bg" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"><div class="skill-bar-fill" data-width="75%"></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="stats" class="section bg-alt" aria-label="Statistics">
+      <div class="container">
+        <div class="stats-grid">
+          <div class="stat-card glass-card reveal-scale">
+            <div class="stat-num gradient-text counter" data-target="3">0</div>
+            <div class="stat-label" data-i18n="stat_exp">سنوات خبرة</div>
+          </div>
+          <div class="stat-card glass-card reveal-scale" style="transition-delay: 100ms;">
+            <div class="stat-num gradient-text counter" data-target="45">0</div>
+            <div class="stat-label" data-i18n="stat_proj">مشروع مكتمل</div>
+          </div>
+          <div class="stat-card glass-card reveal-scale" style="transition-delay: 200ms;">
+            <div class="stat-num gradient-text counter" data-target="30">0</div>
+            <div class="stat-label" data-i18n="stat_clients">عميل سعيد</div>
+          </div>
+          <div class="stat-card glass-card reveal-scale" style="transition-delay: 300ms;">
+            <div class="stat-num gradient-text counter" data-target="8">0</div>
+            <div class="stat-label" data-i18n="stat_platforms">منصات نشطة</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery" class="section">
+      <div class="container">
+        <div class="section-header reveal-up">
+          <h2 class="section-title gradient-text" data-i18n="gallery_title">معرض الأعمال</h2>
+          <div class="section-line"></div>
+        </div>
+        <div class="gallery-grid">
+          <div class="gallery-item glass-card reveal-up">
+            <div class="gallery-overlay">
+              <span data-i18n="gallery_soon">قريباً</span>
+            </div>
+          </div>
+          <div class="gallery-item glass-card reveal-up" style="transition-delay: 100ms;">
+            <div class="gallery-overlay">
+              <span data-i18n="gallery_soon">قريباً</span>
+            </div>
+          </div>
+          <div class="gallery-item glass-card reveal-up" style="transition-delay: 200ms;">
+            <div class="gallery-overlay">
+              <span data-i18n="gallery_soon">قريباً</span>
+            </div>
+          </div>
+          <div class="gallery-item glass-card reveal-up" style="transition-delay: 300ms;">
+            <div class="gallery-overlay">
+              <span data-i18n="gallery_soon">قريباً</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section bg-alt">
+      <div class="container">
+        <div class="section-header reveal-up">
+          <h2 class="section-title gradient-text" data-i18n="contact_title">تواصل معي</h2>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="contact-wrapper reveal-scale">
+          <div class="contact-card glass-card">
+            <div class="contact-card-inner">
+              <div class="qr-container">
+                <canvas id="qr-code" width="150" height="150" role="img" aria-label="QR code يوصل إلى هذا الموقع"></canvas>
+                <p class="qr-label" data-i18n="contact_scan">امسح الكود</p>
+              </div>
+              <div class="contact-actions">
+                <a href="https://wa.me/qr/P7PNZ2LZGDCWM1" target="_blank" rel="noopener noreferrer" class="btn btn-primary full-width">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                  <span data-i18n="contact_wa">تواصل عبر واتساب</span>
+                </a>
+                <button id="copy-user" class="btn btn-outline full-width" type="button">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"/><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/></svg>
+                  <span data-i18n="contact_copy_user">نسخ المعرف (<bdi dir="ltr">@qp2m9</bdi>)</span>
+                </button>
+                <button id="share-site" class="btn btn-outline full-width" type="button">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" x2="15.42" y1="13.51" y2="17.49"/><line x1="15.41" x2="8.59" y1="6.51" y2="10.49"/></svg>
+                  <span data-i18n="contact_share">مشاركة الموقع</span>
+                </button>
+                <button id="copy-site" class="btn btn-outline full-width" type="button">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
+                  <span data-i18n="contact_copy_site">نسخ رابط الموقع</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-logo gradient-text">MOTASM</div>
+      <p class="copyright" data-i18n="footer_copy">© 2026 معتصم العثمان. جميع الحقوق محفوظة.</p>
+      <div class="footer-social">
+        <a href="https://wa.me/qr/P7PNZ2LZGDCWM1" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp — يفتح في تبويب جديد"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg></a>
+        <a href="https://www.instagram.com/qp2m9?igsh=MWRzdXhvZmp3NW00dg==" target="_blank" rel="noopener noreferrer" aria-label="Instagram — يفتح في تبويب جديد"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg></a>
+        <a href="https://x.com/MOATASMOTHMAN20" target="_blank" rel="noopener noreferrer" aria-label="X — يفتح في تبويب جديد"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"/></svg></a>
+      </div>
+    </div>
+  </footer>
+
+  <button id="back-to-top" class="icon-btn floating-btn" type="button" aria-label="العودة للأعلى">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m18 15-6-6-6 6"/></svg>
+  </button>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+  <noscript>
+    <div style="position:fixed;inset:0;background:#0B0B0F;color:#fff;display:flex;align-items:center;justify-content:center;text-align:center;padding:2rem;font-family:sans-serif;z-index:99999;">
+      يتطلب هذا الموقع تفعيل JavaScript لعرض المحتوى بشكل كامل. الرجاء تفعيله من إعدادات المتصفح.
+    </div>
+  </noscript>
+
+  <script type="module" src="./assets/js/script.js"></script>
+</body>
+</html>
